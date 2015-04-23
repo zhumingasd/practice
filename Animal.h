@@ -1,21 +1,19 @@
-*************************************************************************
-	> File Name: animal.h
+/*************************************************************************
+	> File Name: Animal.h
 	> Author: ma6174
 	> Mail: ma6174@163.com 
-	> Created Time: 2015年04月20日 星期一 14时42分09秒
+	> Created Time: 2015年04月23日 星期四 07时46分50秒
  ************************************************************************/
-
-#include<iostream>
-using namespace std;
+#pragma once
 class Animal
 {
 	public:
 		Animal();
-	    ~Animal();
+		~Animal();
 	public:
 		virtual void Cry();
-		void setAge(int age);
-		virtual int  GetAge();
+		void SetAge(int age);
+		void  GetAge();
 	private:
-		int m_age();
-}
+		int m_age;
+};

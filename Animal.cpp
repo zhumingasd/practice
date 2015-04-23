@@ -8,11 +8,11 @@
 #include<iostream>
 using namespace std;
 #include "Animal.h"
-void Animal::Animal()
+Animal::Animal()
 {
 	cout << "Animal constructed" << endl;
 }
-void Animal::~Animal()
+Animal::~Animal()
 {
 	cout << "Animal desconstructed" << endl;
 }
@@ -20,7 +20,7 @@ void Animal::SetAge(int age)
 {
 	m_age = age;
 }
-void Animal::cry()
+void Animal::Cry()
 {
 	cout << "animal is crying" << endl;
 }

@@ -8,13 +8,13 @@
 #include<iostream>
 using namespace std;
 #include "Cat.h"
+#include "Animal.h"
 int main()
 {
     Animal *animal;
 	Cat cat;
 	animal = &cat;
-	animal.SetAge(3);
-	int age = animal.GetAge();
-	cout << "age:" << age << endl;
+	animal->SetAge(3);
+	animal->GetAge();
     return 0;
 }
